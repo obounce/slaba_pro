@@ -1,7 +1,7 @@
 name: slaba_pro
-description: A new flutter plugin project.
-version: 0.0.1+1
-homepage: https://github.com/obounce/slaba
+description: A new flutter package project I created by following a tutorial.
+version: 0.0.1+2
+homepage: https://github.com/obounce/slaba_pro
 
 environment:
   sdk: ">=2.12.0 <3.0.0"

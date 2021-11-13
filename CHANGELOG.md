@@ -13,3 +13,7 @@
 ## 0.0.1+3
 
 * TODO: Color feature added
+
+## 0.0.1+4
+
+* TODO: Support for windows added

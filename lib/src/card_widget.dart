@@ -3,7 +3,9 @@ part of slaba;
 /// This is the first one app flutter package - check it out[sammuel]
 class OneAppPlugin {
   /// Get the payment method UI
+  ///
   /// Required params: [firstname, lastname, email, phone, amount, currency, description, returnUrl, cancelUrl, paymentMethod, secretKey]
+  ///
   /// ```dart
   /// OneAppPlugin().getPaymentUI(
   ///   context,
@@ -14,6 +16,7 @@ class OneAppPlugin {
   ///   lastName: 'Paul',
   ///   phoneNumber: '08033456789',
   ///   secretKey: '',
+  ///   color: Color(0xFFE70A80),
   /// );
   /// ```
   void getPaymentUI(
@@ -25,11 +28,11 @@ class OneAppPlugin {
     required double amount,
     required String currency,
     required String secretKey,
+    Color color = const Color(0xFFE70A80),
   }) {
     showDialog(
       context: context,
       builder: (context) {
-        Color main = const Color(0xFFE70A80);
         return Dialog(
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 14.0, horizontal: 10),
@@ -40,7 +43,7 @@ class OneAppPlugin {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     CircleAvatar(
-                      backgroundColor: main,
+                      backgroundColor: color,
                       child: Text(
                         firstName[0] + lastName[0],
                         style: const TextStyle(color: Colors.white),
@@ -85,7 +88,7 @@ class OneAppPlugin {
                     counterText: '',
                     border: const OutlineInputBorder(),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: main),
+                      borderSide: BorderSide(color: color),
                     ),
                     isDense: true,
                   ),
@@ -105,7 +108,7 @@ class OneAppPlugin {
                           counterText: '',
                           border: const OutlineInputBorder(),
                           focusedBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color: main),
+                            borderSide: BorderSide(color: color),
                           ),
                           isDense: true,
                         ),
@@ -124,7 +127,7 @@ class OneAppPlugin {
                           counterText: '',
                           border: const OutlineInputBorder(),
                           focusedBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color: main),
+                            borderSide: BorderSide(color: color),
                           ),
                           isDense: true,
                         ),
@@ -142,7 +145,7 @@ class OneAppPlugin {
                   minWidth: double.infinity,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(7)),
-                  color: main,
+                  color: color,
                   child: Text(
                     'Pay NGN $amount',
                     style: const TextStyle(

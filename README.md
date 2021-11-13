@@ -2,7 +2,7 @@
 
 A new flutter plugin project.
 
-Made by Samuel Adekunle x O'Bounce Technologies,
+Made by [Samuel Adekunle](https://github.com/techwithsam) x [O'Bounce Technologies](https://obounce.net),
 
 Install and import the package. Then just customize its parameters.
 
@@ -41,4 +41,5 @@ Clone this repo and navigate to the **example** folder. Open it with a supported
 
 The project is open to public contribution. Please feel very free to contribute.
 Experienced an issue or want to report a bug? Please, [report it here](https://github.com/obounce/slaba_pro/issues). Remember to be as descriptive as possible.
-"# slaba_pro" 
+
+"# slaba_pro"

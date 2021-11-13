@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:slaba_pro/slaba_pro.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -35,26 +36,20 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text('Plugin example app'),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            // buildBMI(context, 34.0),
-            TextButton(
-              onPressed: () {
-                OneAppPlugin().getPaymentUI(
-                  context,
-                  amount: 3400,
-                  email: 'samuel@obounce.net',
-                  currency: 'NGN',
-                  firstName: 'Opeyemi',
-                  lastName: 'Paul',
-                  phoneNumber: '08033456789',
-                  secretKey: '',
-                );
-              },
-              child: const Text('Place Order Now!'),
-            ),
-          ],
+        child: TextButton(
+          onPressed: () {
+            OneAppPlugin().getPaymentUI(
+              context,
+              amount: 3400,
+              email: 'samuel@obounce.net',
+              currency: 'NGN',
+              firstName: 'Opeyemi',
+              lastName: 'Paul',
+              phoneNumber: '08033456789',
+              secretKey: '',
+            );
+          },
+          child: const Text('Place Order Now!'),
         ),
       ),
     );
